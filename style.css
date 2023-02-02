@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color:#000;
+}
+.container{
+    position: relative;
+    top: 250px;
+    left: 560px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 800px;
+}
+.sphere{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #3498db;
+    box-shadow: 0 5px 35px rgb(15, 15, 150);
+    animation: sphere 1s ease-in-out infinite;
+}
+@keyframes sphere {
+    0%{transform: translate(-50%,-50%) scale(1);}
+    100%{transform: translate(-50%,-50%) scale(1.5);}
+}
+
+.sphere-b{
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 0 5px 35px rgb(99, 7, 248);
+    animation: sphere-b 1s ease-in-out infinite;
+}
+@keyframes sphere-b {
+    0%{transform: translate(-50%,-50%) scale(1);
+    rotate: 0deg;}
+    100%{transform: translate(-50%,-50%) scale(1.5);
+    rotate:720deg;}
+}
+
